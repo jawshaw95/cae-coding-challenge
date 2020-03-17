@@ -1,25 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import "./App.css";
+import Event from "./Event/Event";
+import { Container } from "@material-ui/core";
+import { fetchEvent } from "./client/meetupApiClient";
+
+async function fetchData() {
+  const response = await fetchEvent("reactjs-dallas", "mrkxmrybcgbsb");
+  const data = await response.data;
+
+  return data;
+}
 
 function App() {
+  const [events, setEvents] = useState(null);
+
+  useEffect(() => {
+    fetchData().then(data => setEvents(data));
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Container disableGutters>
+        {events ? <Event event={events} /> : <div></div>}
+      </Container>
+    </>
   );
 }
 
