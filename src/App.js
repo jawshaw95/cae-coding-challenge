@@ -4,24 +4,22 @@ import Event from "./Event/Event";
 import { Container } from "@material-ui/core";
 import { fetchEvent } from "./client/meetupApiClient";
 
-async function fetchData() {
+async function fetchEventData() {
   const response = await fetchEvent("reactjs-dallas", "mrkxmrybcgbsb");
-  const data = await response.data;
-
-  return data;
+  return response.data;
 }
 
 function App() {
-  const [events, setEvents] = useState(null);
+  const [event, setEvent] = useState(null);
 
   useEffect(() => {
-    fetchData().then(data => setEvents(data));
+    fetchEventData().then(data => setEvent(data));
   }, []);
 
   return (
     <>
       <Container disableGutters>
-        {events ? <Event event={events} /> : <div></div>}
+        {event ? <Event event={event} /> : <div></div>}
       </Container>
     </>
   );
