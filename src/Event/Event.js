@@ -1,6 +1,7 @@
 import React from "react";
 import EventHeader from "../EventHeader/EventHeader";
 import EventDetails from "../EventDetails/EventDetails";
+import EventRSVPContainer from "../EventRSVP/EventRSVPContainer";
 
 export default function Event({ event }) {
   const { address_1, address_2, city, state, zip } = event.venue;
@@ -17,6 +18,7 @@ export default function Event({ event }) {
         address={address}
       />
       <EventDetails description={description} />
+      <EventRSVPContainer />
     </>
   );
 }
