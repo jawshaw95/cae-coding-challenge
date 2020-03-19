@@ -20,7 +20,11 @@ function App() {
     const RSVPList = await response.data;
     setRSVPs(RSVPList);
     setHost(
-      RSVPList.filter(rsvp => rsvp.member.event_context.host === true)[0]
+      RSVPList.filter(rsvp => {
+        if(rsvp.member.event_context.host === true) {
+          return rsvp
+        };
+      })[0]
     );
   }
 
@@ -35,7 +39,11 @@ function App() {
   return (
     <>
       <Container disableGutters>
-        {event && host ? <Event event={event} host={host} RSVPs={RSVPs}/> : <div>Loading</div>}
+        {event && host ? (
+          <Event event={event} host={host} RSVPs={RSVPs} />
+        ) : (
+          <div>Loading</div>
+        )}
       </Container>
     </>
   );
