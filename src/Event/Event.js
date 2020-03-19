@@ -3,7 +3,7 @@ import EventHeader from "../EventHeader/EventHeader";
 import EventDetails from "../EventDetails/EventDetails";
 import EventRSVPContainer from "../EventRSVP/EventRSVPContainer";
 
-export default function Event({ event }) {
+export default function Event({ event, host, RSVPs }) {
   const { address_1, address_2, city, state, zip } = event.venue;
   const { local_time, local_date, name, description } = event;
 
@@ -16,9 +16,10 @@ export default function Event({ event }) {
         eventDate={eventDate.toLocaleString()}
         eventName={name}
         address={address}
+        host={host}
       />
       <EventDetails description={description} />
-      <EventRSVPContainer />
+      {RSVPs.length > 0 && <EventRSVPContainer host={host} RSVPs={RSVPs}/>}
     </>
   );
 }

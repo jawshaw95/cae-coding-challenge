@@ -1,8 +1,7 @@
 import React from "react";
 import { Typography, Paper } from "@material-ui/core";
 
-export default function EventHeader(props) {
-  const { eventDate, eventName, address } = props;
+export default function EventHeader({ eventDate, eventName, address, host }) {
 
   return (
     <>
@@ -12,6 +11,7 @@ export default function EventHeader(props) {
         <Typography color="textSecondary" variant="h6">
           {eventDate}
         </Typography>
+        
       </Paper>
     </>
   );

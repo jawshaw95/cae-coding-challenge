@@ -9,7 +9,7 @@ export default function ParticipantCard({participant}) {
                 {participant.member.name}
             </div>
             {participant.member.event_context.host ? <div>Da Host</div> : <div> Member </div>} 
-
+        
         </div>
     )
 }
