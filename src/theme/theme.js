@@ -10,21 +10,20 @@ export default createMuiTheme({
       "@media (max-width:600px)": {
         fontSize: "1.75rem"
       },
-
       color: "black",
       fontWeight: "bold"
     },
     h2: {
-      fontSize: "1.3em",
-      fontWeight: "lighter"
+      fontSize: "1.5em",
+      fontWeight: "Bold"
     },
     h3: {
-      fontSize: "1.5rem",
-      fontWeight: "bold"
+      fontSize: "1.3rem",
+      fontWeight: "lighter"
     },
     h4: {
       fontSize: "1.2rem",
-      fontWeight: 'bold'
+      fontWeight: "bold"
     },
     h6: {
       fontSize: ".9rem",
@@ -38,5 +37,9 @@ export default createMuiTheme({
     body1: {
       fontWeight: 500
     }
+  },
+  link: {
+    textDecoration: "none",
+    textTransform: "none"
   }
 });
