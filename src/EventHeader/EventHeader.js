@@ -24,15 +24,6 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-function formatDatetime(date) {
-  return date.toLocaleDateString("en-US", {
-    weekday: "long",
-    year: "numeric",
-    month: "long",
-    day: "numeric"
-  });
-}
-
 export default function EventHeader({ eventDate, eventName, host }) {
   const classes = useStyles();
 
@@ -63,7 +54,7 @@ export default function EventHeader({ eventDate, eventName, host }) {
           </Grid>
         </Grid>
         <Typography variant="h2" className={classes.eventDateText}>
-          {formatDatetime(eventDate)}
+          {eventDate}
         </Typography>
       </div>
     </>

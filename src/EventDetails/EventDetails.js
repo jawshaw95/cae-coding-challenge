@@ -1,52 +1,65 @@
 import React from "react";
 import { Parser } from "html-to-react";
-import { Grid, useMediaQuery } from "@material-ui/core";
+import { Grid, useMediaQuery, Typography } from "@material-ui/core";
 import { useTheme, makeStyles } from "@material-ui/core/styles";
 import Map from "../MapContainer/MapContainer";
 
+//util to render HTML from event Payload
 const htmlToReactParser = new Parser();
 
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1
+  },
+  mapContainer: {
+    textAlign: "center"
   }
 }));
 
-export default function EventDetails({ description, event }) {
+export default function EventDetails({ description, event, eventDate, address, group }) {
   const classes = useStyles();
   const theme = useTheme();
   const smallScreen = useMediaQuery(theme.breakpoints.down("xs"));
 
-  const { address_1, address_2, city, state, zip } = event.venue;
-
   return (
-    <Grid
-      container
-      className={classes.root}
-      direction={smallScreen ? "column" : "row"}
-      spacing={4}
-      alignItems='center'
-    >
+    <div className={classes.root}>
+      <Typography variant="h3">Info</Typography>
       <Grid
-        item
-        xs={smallScreen ? "12" : "6"}
-        className={classes.descriptionContainer}
+        container
+        direction={smallScreen ? "column" : "row"}
+        spacing={4}
+        justify="center"
       >
-        <div style={{ overflowWrap: "break-word" }}>
-          {htmlToReactParser.parse(description)}
-        </div>
+        <Grid
+          item
+          xs={smallScreen ? 12 : 6}
+          className={classes.descriptionContainer}
+        >
+          <div style={{ overflowWrap: "break-word" }}>
+            {htmlToReactParser.parse(description)}
+          </div>
+        </Grid>
+        <Grid item xs={smallScreen ? 12 : 6} className={classes.mapContainer}>
+          <Typography variant="h4">Who</Typography>
+          <Typography variant="h6" style={{ paddingBottom: "10px" }}>
+            {group}
+          </Typography>
+          <Typography variant="h4">When</Typography>
+          <Typography variant="h6" style={{ paddingBottom: "10px" }}>
+            {eventDate}
+          </Typography>
+          <Typography variant="h4">Where</Typography>
+          <Typography variant="h6" style={{ paddingBottom: "10px" }}>
+            {address}
+          </Typography>
+          <Map
+            latitude={event.venue.lat}
+            longitude={event.venue.lon}
+            size={`400x400`}
+            zoom="10"
+          />
+        </Grid>
       </Grid>
-      <Grid item xs={smallScreen ? "12" : "6"} className={classes.mapContainer}>
-        <div
-          style={{ paddingBottom: "10px" }}
-        >{`${address_1} ${address_2} ${city}, ${state.toUpperCase()}, ${zip}`}</div>
-        <Map
-          latitude={event.venue.lat}
-          longitude={event.venue.lon}
-          size={`400x600`}
-          zoom="10"
-        />
-      </Grid>
-    </Grid>
+    </div>
   );
 }

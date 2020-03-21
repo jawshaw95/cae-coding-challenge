@@ -3,7 +3,7 @@ import { createMuiTheme } from "@material-ui/core/styles";
 export default createMuiTheme({
   typography: {
     h1: {
-      fontSize: "3em",
+      fontSize: "3rem",
       "@media (max-width:960px)": {
         fontSize: "2.25rem"
       },
@@ -18,9 +18,17 @@ export default createMuiTheme({
       fontSize: "1.3em",
       fontWeight: "lighter"
     },
+    h3: {
+      fontSize: "1.5rem",
+      fontWeight: "bold"
+    },
+    h4: {
+      fontSize: "1.2rem",
+      fontWeight: 'bold'
+    },
     h6: {
       fontSize: ".9rem",
-      fontWeight: "bold"
+      fontWeight: "lighter"
     },
     color: "black",
     subtitle1: {

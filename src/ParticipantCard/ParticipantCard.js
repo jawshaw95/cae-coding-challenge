@@ -6,50 +6,45 @@ const useStyles = makeStyles(theme => ({
   root: {
     minWidth: 120,
     maxWidth: 1,
-    minHeight: 50,
+    minHeight: 50
   },
   center: {
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    // padding: '10px'
+    marginLeft: "auto",
+    marginRight: "auto"
   },
   media: {
-    marginLeft: 'auto',
-    marginRight: 'auto',
+    marginLeft: "auto",
+    marginRight: "auto",
     height: 60,
     width: 60,
-    borderRadius: '50%',
-    marginTop: '10px'
+    borderRadius: "50%",
+    marginTop: "10px"
   },
   cardContentRoot: {
-    textAlign: 'center',
-  },
-  
-  
+    textAlign: "center"
+  }
 }));
 
 export default function ParticipantCard({ participant }) {
-  //Todo, overflow is hidden, but maybe can handle that better
   const classes = useStyles();
   return (
     <Card className={classes.root}>
       <CardMedia
         className={classes.media}
-        classes={{media: classes.media}}
+        classes={{ media: classes.media }}
         image={
           participant.member.photo ? participant.member.photo.thumb_link : ""
         }
         title="profile pic"
       ></CardMedia>
       <CardContent className={classes.cardContentRoot}>
-        <Typography className={classes.padding} variant="h6" component={'p'}>{participant.member.name}</Typography>
+        <Typography className={classes.padding} variant="h6" component={"p"}>
+          {participant.member.name}
+        </Typography>
         <Typography variant="subtitle1">
           {participant.member.event_context.host ? "Organizer" : "Member"}
         </Typography>
       </CardContent>
-      {/* <CardContent classes={{root: classes.cardContentRoot}}>
-        
-      </CardContent> */}
     </Card>
   );
 }

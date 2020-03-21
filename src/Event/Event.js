@@ -7,20 +7,18 @@ import { Grid, Paper } from "@material-ui/core";
 
 const useStyles = makeStyles(theme => ({
   root: {
-    flexGrow: 1,
-    width: "100%"
+    flexGrow: 1
   },
   eventHeader: {
     padding: theme.spacing(2),
+    textAlign: "left",
     borderRadius: 0,
-    textAlign: 'left',
     backgroundColor: "#E9EBF8"
   },
   eventDescription: {
     padding: theme.spacing(2),
     borderRadius: 0,
     backgroundColor: "#FDFEFF"
-    
   },
   eventRSVPs: {
     padding: theme.spacing(2),
@@ -29,37 +27,60 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
+function formatDatetime(date) {
+  return date.toLocaleDateString("en-US", {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric"
+  });
+}
+
 export default function Event({ event, host, RSVPs }) {
   const classes = useStyles();
+  const { local_time, local_date, name, description, venue, group } = event;
+  const { address_1, address_2, city, state, zip } = venue;
 
-  const { address_1, address_2, city, state, zip } = event.venue;
-  const { local_time, local_date, name, description } = event;
-
+  //Formatted Address
   const address = `${address_1} ${address_2}, ${city}, ${state.toUpperCase()} ${zip}`;
-  const eventDate = new Date(`${local_time} ${local_date}`);
+
+  //Formatted Date
+  const eventDate = formatDatetime(new Date(`${local_time} ${local_date}`));
 
   return (
     <div className={classes.root}>
-      <Grid container direction="column" justify="center" className={classes.eventGrid} spacing={0}>
-        {/* <div className={classes.eventHeader}> */}
-          <Grid xs={12} item>
-            <Paper className={classes.eventHeader}>
-              <EventHeader
-                eventDate={eventDate.toLocaleString()}
-                eventName={name}
-                address={address}
-                host={host}
-              />
-            </Paper>
-          </Grid>
-        <Grid xs={12} item>
-            <Paper className={classes.eventDescription}>
-              <EventDetails description={description} />
-            </Paper>
+      <Grid
+        container
+        direction="column"
+        className={classes.eventGrid}
+        spacing={0}
+      >
+        <Grid item>
+          <Paper className={classes.eventHeader}>
+            <EventHeader
+              eventDate={eventDate}
+              eventName={name}
+              address={address}
+              host={host}
+            />
+          </Paper>
         </Grid>
         <Grid xs={12} item>
+          <Paper className={classes.eventDescription}>
+            <EventDetails
+              description={description}
+              event={event}
+              eventDate={eventDate}
+              address={address}
+              group={group.name}
+            />
+          </Paper>
+        </Grid>
+        <Grid item>
           <Paper className={classes.eventRSVPs}>
-            {RSVPs.length > 0 && <EventRSVPContainer host={host} RSVPs={RSVPs} />}
+            {RSVPs.length > 0 && (
+              <EventRSVPContainer host={host} RSVPs={RSVPs} />
+            )}
           </Paper>
         </Grid>
       </Grid>
