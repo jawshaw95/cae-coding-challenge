@@ -5,12 +5,12 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles(theme => ({
   root: {
     minWidth: 120,
-    maxWidth: 1,
-    minHeight: 50
+    minHeight: 50,
+    textAlign: "center"
   },
   center: {
-    marginLeft: "auto",
-    marginRight: "auto"
+    // marginLeft: "auto",
+    // marginRight: "auto"
   },
   media: {
     marginLeft: "auto",
@@ -20,9 +20,6 @@ const useStyles = makeStyles(theme => ({
     borderRadius: "50%",
     marginTop: "10px"
   },
-  cardContentRoot: {
-    textAlign: "center"
-  }
 }));
 
 export default function ParticipantCard({ participant }) {
@@ -31,13 +28,12 @@ export default function ParticipantCard({ participant }) {
     <Card className={classes.root}>
       <CardMedia
         className={classes.media}
-        classes={{ media: classes.media }}
         image={
           participant.member.photo ? participant.member.photo.thumb_link : ""
         }
         title="profile pic"
       ></CardMedia>
-      <CardContent className={classes.cardContentRoot}>
+      <CardContent>
         <Typography className={classes.padding} variant="h6" component={"p"}>
           {participant.member.name}
         </Typography>
