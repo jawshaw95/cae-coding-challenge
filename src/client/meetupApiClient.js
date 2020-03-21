@@ -18,7 +18,7 @@ export const fetchEvents = group => {
 export const fetchEvent = (group, eventId) => {
   if (process.env.NODE_ENV === "development") {
     return new Promise((resolve, reject) => {
-      setTimeout(() => resolve({"data": event}), 1);
+      setTimeout(() => resolve({ data: event }), 1);
     });
   }
   return axios.get(`${base}/${group}/events/${eventId}`);
@@ -27,7 +27,7 @@ export const fetchEvent = (group, eventId) => {
 export const fetchEventRSVPS = (group, eventId) => {
   if (process.env.NODE_ENV === "development") {
     return new Promise((resolve, reject) => {
-      setTimeout(() => resolve({"data": eventRSVP}), 1);
+      setTimeout(() => resolve({ data: eventRSVP }), 1);
     });
   }
   return axios.get(`${base}/${group}/events/${eventId}/rsvps`);
