@@ -1,54 +1,71 @@
 import React from "react";
-import {Avatar, Grid } from "@material-ui/core";
+import { Avatar, Grid, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(theme => ({
-  eventName: {
-    color: "black",
-    fontFamily: "Arial",
-    fontSize: "2.5rem",
-    fontWeight: "bold",
-    marginBottom: "10px",
-    [theme.breakpoints.down("xs")]: {
-      fontSize: "2.25rem"
-    }
+  root: {
+    textAlign: "center"
+  },
+  eventNameText: {
+    marginBottom: ".3em",
+  },
+  eventDateText: {
+    fontFamily: "arial",
+    marginTop: ".3em",
   },
   hostName: {
+    color: "black",
     fontWeight: "bold",
-    fontFamily: "Arial",
     fontSize: "1.25rem"
   },
   hostedText: {
-    fontSize: ".75rem",
+    fontSize: "1rem",
     fontWeight: "normal"
   }
 }));
 
-export default function EventHeader({ eventDate, eventName, address, host }) {
+function formatDatetime(date) {
+  return date.toLocaleDateString("en-US", {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric"
+  });
+}
+
+export default function EventHeader({ eventDate, eventName, host }) {
   const classes = useStyles();
+
   return (
     <>
-      <h1 className={classes.eventName}>{eventName}</h1>
-      <Grid
-        container
-        justify="flex-start"
-        spacing={2}
-        className={classes.hostGrid}
-      >
-        <Grid item>
-          <Avatar alt={host.name} src={host.member.photo.thumb_link} />
-        </Grid>
-        <Grid item>
-          <Grid container direction="column" className={classes.hostName}>
-            <Grid item className={classes.hostedText}>
-              The Host
-            </Grid>
-            <Grid item className={classes.hostName}>
-              {host.member.name}
+      <div className={classes.root}>
+        <Typography className={classes.eventNameText} variant="h1">
+          {eventName}
+        </Typography>
+        <Grid
+          container
+          justify="center"
+          spacing={2}
+          className={classes.hostGrid}
+        >
+          <Grid item>
+            <Avatar alt={host.name} src={host.member.photo.thumb_link} />
+          </Grid>
+          <Grid item>
+            <Grid container direction="column" className={classes.hostName}>
+              <Grid item className={classes.hostedText}>
+                The Host
+              </Grid>
+              <Grid item className={classes.hostName}>
+                {host.member.name}
+              </Grid>
             </Grid>
           </Grid>
         </Grid>
-      </Grid>
+        <Typography variant="h2" className={classes.eventDateText}>
+          {formatDatetime(eventDate)}
+        </Typography>
+      </div>
     </>
   );
 }
