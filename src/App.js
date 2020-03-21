@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "./App.css";
 import Event from "./Event/Event";
 import { Container } from "@material-ui/core";
 import { fetchEvent, fetchEventRSVPS } from "./client/meetupApiClient";
