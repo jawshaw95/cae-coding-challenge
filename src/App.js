@@ -19,11 +19,7 @@ function App() {
     const RSVPList = await response.data;
     setRSVPs(RSVPList);
     setHost(
-      RSVPList.filter(rsvp => {
-        if(rsvp.member.event_context.host === true) {
-          return rsvp
-        };
-      })[0]
+      RSVPList.filter(rsvp => rsvp.member.event_context.host === true)[0]
     );
   }
 
