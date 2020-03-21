@@ -23,7 +23,7 @@ export default function EventDetails({ description, event, eventDate, address, g
 
   return (
     <div className={classes.root}>
-      <Typography variant="h3">Info</Typography>
+      <Typography variant="h2">Info</Typography>
       <Grid
         container
         direction={smallScreen ? "column" : "row"}
