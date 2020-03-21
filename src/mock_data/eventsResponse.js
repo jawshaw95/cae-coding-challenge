@@ -1,5 +1,5 @@
-export default {
-  "0": {
+export default [
+  {
     created: 1573148914000,
     duration: 7200000,
     id: "mrkxmrybcgbsb",
@@ -14,7 +14,7 @@ export default {
     updated: 1583891810000,
     utc_offset: -18000000,
     waitlist_count: 0,
-    yes_rsvp_count: 53,
+    yes_rsvp_count: 54,
     venue: {
       id: 26856955,
       name: "Virgin Pulse",
@@ -45,11 +45,12 @@ export default {
       timezone: "US/Central"
     },
     link: "https://www.meetup.com/ReactJSDallas/events/mrkxmrybcgbsb/",
-    description: `<p>Everyone has seen React in action. If you have used Facebook, Instagram, Airbnb, Dropbox, or IMDb, then you have used React.</p> <p>Our team at Call-Em-All created the popular open-source library Material-UI (<a href="http://www.material-ui.com" class="linkified">http://www.material-ui.com</a>), and we use React every day.</p> <p>Bring your laptop with your favorite text editor, dig into the React docs (<a href="http://facebook.github.io/react/" class="linkified">http://facebook.github.io/react/</a>) to get started learning, and come ready with questions that we can tackle together.</p> <p>Pizza/drinks at 6:15pm and feel free to stay later for more conversations!</p> <p>---------<br/>Join our Slack channel to tell us about your open jobs, upcoming events, fun blog posts, and code issues that Stack Overflow cannot solve!</p> <p><a href="https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY" class="linkified">https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY</a><br/>--------<br/>If you want to support our fun and informative events, then you can now make a contribution to our ReactJS Dallas User Group open collective!</p> <p><a href="https://opencollective.com/reactjs-dallas" class="linkified">https://opencollective.com/reactjs-dallas</a></p> `,
-    "visibility": "public",
+    description:
+      '<p>Everyone has seen React in action. If you have used Facebook, Instagram, Airbnb, Dropbox, or IMDb, then you have used React.</p> <p>Our team at Call-Em-All created the popular open-source library Material-UI (<a href="http://www.material-ui.com" class="linkified">http://www.material-ui.com</a>), and we use React every day.</p> <p>Bring your laptop with your favorite text editor, dig into the React docs (<a href="http://facebook.github.io/react/" class="linkified">http://facebook.github.io/react/</a>) to get started learning, and come ready with questions that we can tackle together.</p> <p>Pizza/drinks at 6:15pm and feel free to stay later for more conversations!</p> <p>---------<br/>Join our Slack channel to tell us about your open jobs, upcoming events, fun blog posts, and code issues that Stack Overflow cannot solve!</p> <p><a href="https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY" class="linkified">https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY</a><br/>--------<br/>If you want to support our fun and informative events, then you can now make a contribution to our ReactJS Dallas User Group open collective!</p> <p><a href="https://opencollective.com/reactjs-dallas" class="linkified">https://opencollective.com/reactjs-dallas</a></p> ',
+    visibility: "public",
     member_pay_fee: false
   },
-  "1": {
+  {
     created: 1573148914000,
     duration: 7200000,
     id: "mrkxmrybchbqb",
@@ -95,11 +96,12 @@ export default {
       timezone: "US/Central"
     },
     link: "https://www.meetup.com/ReactJSDallas/events/mrkxmrybchbqb/",
-    description: `<p>Everyone has seen React in action. If you have used Facebook, Instagram, Airbnb, Dropbox, or IMDb, then you have used React.</p> <p>Our team at Call-Em-All created the popular open-source library Material-UI (<a href="http://www.material-ui.com" class="linkified">http://www.material-ui.com</a>), and we use React every day.</p> <p>Bring your laptop with your favorite text editor, dig into the React docs (<a href="http://facebook.github.io/react/" class="linkified">http://facebook.github.io/react/</a>) to get started learning, and come ready with questions that we can tackle together.</p> <p>Pizza/drinks at 6:15pm and feel free to stay later for more conversations!</p> <p>---------<br/>Join our Slack channel to tell us about your open jobs, upcoming events, fun blog posts, and code issues that Stack Overflow cannot solve!</p> <p><a href="https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY" class="linkified">https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY</a><br/>--------<br/>If you want to support our fun and informative events, then you can now make a contribution to our ReactJS Dallas User Group open collective!</p> <p><a href="https://opencollective.com/reactjs-dallas" class="linkified">https://opencollective.com/reactjs-dallas</a></p> ",
-    "visibility": "public`,
+    description:
+      '<p>Everyone has seen React in action. If you have used Facebook, Instagram, Airbnb, Dropbox, or IMDb, then you have used React.</p> <p>Our team at Call-Em-All created the popular open-source library Material-UI (<a href="http://www.material-ui.com" class="linkified">http://www.material-ui.com</a>), and we use React every day.</p> <p>Bring your laptop with your favorite text editor, dig into the React docs (<a href="http://facebook.github.io/react/" class="linkified">http://facebook.github.io/react/</a>) to get started learning, and come ready with questions that we can tackle together.</p> <p>Pizza/drinks at 6:15pm and feel free to stay later for more conversations!</p> <p>---------<br/>Join our Slack channel to tell us about your open jobs, upcoming events, fun blog posts, and code issues that Stack Overflow cannot solve!</p> <p><a href="https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY" class="linkified">https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY</a><br/>--------<br/>If you want to support our fun and informative events, then you can now make a contribution to our ReactJS Dallas User Group open collective!</p> <p><a href="https://opencollective.com/reactjs-dallas" class="linkified">https://opencollective.com/reactjs-dallas</a></p> ',
+    visibility: "public",
     member_pay_fee: false
   },
-  "2": {
+  {
     created: 1507747389000,
     duration: 7200000,
     id: "mrkxmrybcjbmb",
@@ -145,11 +147,12 @@ export default {
       timezone: "US/Central"
     },
     link: "https://www.meetup.com/ReactJSDallas/events/mrkxmrybcjbmb/",
-    description: `<p>Everyone has seen React in action. If you have used Facebook, Instagram, Airbnb, Dropbox, or IMDb, then you have used React.</p> <p>Our team at Call-Em-All created the popular open-source library Material-UI (<a href="http://www.material-ui.com" class="linkified">http://www.material-ui.com</a>), and we use React every day.</p> <p>Bring your laptop with your favorite text editor, dig into the React docs (<a href="http://facebook.github.io/react/" class="linkified">http://facebook.github.io/react/</a>) to get started learning, and come ready with questions that we can tackle together.</p> <p>Pizza/drinks at 6:15pm and feel free to stay later for more conversations!</p> <p>---------<br/>Join our Slack channel to tell us about your open jobs, upcoming events, fun blog posts, and code issues that Stack Overflow cannot solve!</p> <p><a href="https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY" class="linkified">https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY</a><br/>--------<br/>If you want to support our fun and informative events, then you can now make a contribution to our ReactJS Dallas User Group open collective!</p> <p><a href="https://opencollective.com/reactjs-dallas" class="linkified">https://opencollective.com/reactjs-dallas</a></p> ",
-    "visibility": "public`,
+    description:
+      '<p>Everyone has seen React in action. If you have used Facebook, Instagram, Airbnb, Dropbox, or IMDb, then you have used React.</p> <p>Our team at Call-Em-All created the popular open-source library Material-UI (<a href="http://www.material-ui.com" class="linkified">http://www.material-ui.com</a>), and we use React every day.</p> <p>Bring your laptop with your favorite text editor, dig into the React docs (<a href="http://facebook.github.io/react/" class="linkified">http://facebook.github.io/react/</a>) to get started learning, and come ready with questions that we can tackle together.</p> <p>Pizza/drinks at 6:15pm and feel free to stay later for more conversations!</p> <p>---------<br/>Join our Slack channel to tell us about your open jobs, upcoming events, fun blog posts, and code issues that Stack Overflow cannot solve!</p> <p><a href="https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY" class="linkified">https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY</a><br/>--------<br/>If you want to support our fun and informative events, then you can now make a contribution to our ReactJS Dallas User Group open collective!</p> <p><a href="https://opencollective.com/reactjs-dallas" class="linkified">https://opencollective.com/reactjs-dallas</a></p> ',
+    visibility: "public",
     member_pay_fee: false
   },
-  "3": {
+  {
     created: 1579050782000,
     duration: 7200000,
     id: "mrkxmrybckbsb",
@@ -195,11 +198,12 @@ export default {
       timezone: "US/Central"
     },
     link: "https://www.meetup.com/ReactJSDallas/events/mrkxmrybckbsb/",
-    description: `<p>Everyone has seen React in action. If you have used Facebook, Instagram, Airbnb, Dropbox, or IMDb, then you have used React.</p> <p>Our team at Call-Em-All created the popular open-source library Material-UI (<a href="http://www.material-ui.com" class="linkified">http://www.material-ui.com</a>), and we use React every day.</p> <p>Bring your laptop with your favorite text editor, dig into the React docs (<a href="http://facebook.github.io/react/" class="linkified">http://facebook.github.io/react/</a>) to get started learning, and come ready with questions that we can tackle together.</p> <p>Pizza/drinks at 6:15pm and feel free to stay later for more conversations!</p> <p>---------<br/>Join our Slack channel to tell us about your open jobs, upcoming events, fun blog posts, and code issues that Stack Overflow cannot solve!</p> <p><a href="https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY" class="linkified">https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY</a><br/>--------<br/>If you want to support our fun and informative events, then you can now make a contribution to our ReactJS Dallas User Group open collective!</p> <p><a href="https://opencollective.com/reactjs-dallas" class="linkified">https://opencollective.com/reactjs-dallas</a></p> ",
-    "visibility": "public`,
+    description:
+      '<p>Everyone has seen React in action. If you have used Facebook, Instagram, Airbnb, Dropbox, or IMDb, then you have used React.</p> <p>Our team at Call-Em-All created the popular open-source library Material-UI (<a href="http://www.material-ui.com" class="linkified">http://www.material-ui.com</a>), and we use React every day.</p> <p>Bring your laptop with your favorite text editor, dig into the React docs (<a href="http://facebook.github.io/react/" class="linkified">http://facebook.github.io/react/</a>) to get started learning, and come ready with questions that we can tackle together.</p> <p>Pizza/drinks at 6:15pm and feel free to stay later for more conversations!</p> <p>---------<br/>Join our Slack channel to tell us about your open jobs, upcoming events, fun blog posts, and code issues that Stack Overflow cannot solve!</p> <p><a href="https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY" class="linkified">https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY</a><br/>--------<br/>If you want to support our fun and informative events, then you can now make a contribution to our ReactJS Dallas User Group open collective!</p> <p><a href="https://opencollective.com/reactjs-dallas" class="linkified">https://opencollective.com/reactjs-dallas</a></p> ',
+    visibility: "public",
     member_pay_fee: false
   },
-  "4": {
+  {
     created: 1579050782000,
     duration: 7200000,
     id: "mrkxmrybclbpb",
@@ -245,11 +249,12 @@ export default {
       timezone: "US/Central"
     },
     link: "https://www.meetup.com/ReactJSDallas/events/mrkxmrybclbpb/",
-    description: `<p>Everyone has seen React in action. If you have used Facebook, Instagram, Airbnb, Dropbox, or IMDb, then you have used React.</p> <p>Our team at Call-Em-All created the popular open-source library Material-UI (<a href="http://www.material-ui.com" class="linkified">http://www.material-ui.com</a>), and we use React every day.</p> <p>Bring your laptop with your favorite text editor, dig into the React docs (<a href="http://facebook.github.io/react/" class="linkified">http://facebook.github.io/react/</a>) to get started learning, and come ready with questions that we can tackle together.</p> <p>Pizza/drinks at 6:15pm and feel free to stay later for more conversations!</p> <p>---------<br/>Join our Slack channel to tell us about your open jobs, upcoming events, fun blog posts, and code issues that Stack Overflow cannot solve!</p> <p><a href="https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY" class="linkified">https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY</a><br/>--------<br/>If you want to support our fun and informative events, then you can now make a contribution to our ReactJS Dallas User Group open collective!</p> <p><a href="https://opencollective.com/reactjs-dallas" class="linkified">https://opencollective.com/reactjs-dallas</a></p> ",
-    "visibility": "public`,
+    description:
+      '<p>Everyone has seen React in action. If you have used Facebook, Instagram, Airbnb, Dropbox, or IMDb, then you have used React.</p> <p>Our team at Call-Em-All created the popular open-source library Material-UI (<a href="http://www.material-ui.com" class="linkified">http://www.material-ui.com</a>), and we use React every day.</p> <p>Bring your laptop with your favorite text editor, dig into the React docs (<a href="http://facebook.github.io/react/" class="linkified">http://facebook.github.io/react/</a>) to get started learning, and come ready with questions that we can tackle together.</p> <p>Pizza/drinks at 6:15pm and feel free to stay later for more conversations!</p> <p>---------<br/>Join our Slack channel to tell us about your open jobs, upcoming events, fun blog posts, and code issues that Stack Overflow cannot solve!</p> <p><a href="https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY" class="linkified">https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY</a><br/>--------<br/>If you want to support our fun and informative events, then you can now make a contribution to our ReactJS Dallas User Group open collective!</p> <p><a href="https://opencollective.com/reactjs-dallas" class="linkified">https://opencollective.com/reactjs-dallas</a></p> ',
+    visibility: "public",
     member_pay_fee: false
   },
-  "5": {
+  {
     created: 1579050782000,
     duration: 7200000,
     id: "mrkxmrybcmblb",
@@ -295,11 +300,12 @@ export default {
       timezone: "US/Central"
     },
     link: "https://www.meetup.com/ReactJSDallas/events/mrkxmrybcmblb/",
-    description: `<p>Everyone has seen React in action. If you have used Facebook, Instagram, Airbnb, Dropbox, or IMDb, then you have used React.</p> <p>Our team at Call-Em-All created the popular open-source library Material-UI (<a href="http://www.material-ui.com" class="linkified">http://www.material-ui.com</a>), and we use React every day.</p> <p>Bring your laptop with your favorite text editor, dig into the React docs (<a href="http://facebook.github.io/react/" class="linkified">http://facebook.github.io/react/</a>) to get started learning, and come ready with questions that we can tackle together.</p> <p>Pizza/drinks at 6:15pm and feel free to stay later for more conversations!</p> <p>---------<br/>Join our Slack channel to tell us about your open jobs, upcoming events, fun blog posts, and code issues that Stack Overflow cannot solve!</p> <p><a href="https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY" class="linkified">https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY</a><br/>--------<br/>If you want to support our fun and informative events, then you can now make a contribution to our ReactJS Dallas User Group open collective!</p> <p><a href="https://opencollective.com/reactjs-dallas" class="linkified">https://opencollective.com/reactjs-dallas</a></p> ",
-    "visibility": "public`,
+    description:
+      '<p>Everyone has seen React in action. If you have used Facebook, Instagram, Airbnb, Dropbox, or IMDb, then you have used React.</p> <p>Our team at Call-Em-All created the popular open-source library Material-UI (<a href="http://www.material-ui.com" class="linkified">http://www.material-ui.com</a>), and we use React every day.</p> <p>Bring your laptop with your favorite text editor, dig into the React docs (<a href="http://facebook.github.io/react/" class="linkified">http://facebook.github.io/react/</a>) to get started learning, and come ready with questions that we can tackle together.</p> <p>Pizza/drinks at 6:15pm and feel free to stay later for more conversations!</p> <p>---------<br/>Join our Slack channel to tell us about your open jobs, upcoming events, fun blog posts, and code issues that Stack Overflow cannot solve!</p> <p><a href="https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY" class="linkified">https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY</a><br/>--------<br/>If you want to support our fun and informative events, then you can now make a contribution to our ReactJS Dallas User Group open collective!</p> <p><a href="https://opencollective.com/reactjs-dallas" class="linkified">https://opencollective.com/reactjs-dallas</a></p> ',
+    visibility: "public",
     member_pay_fee: false
   },
-  "6": {
+  {
     created: 1579050782000,
     duration: 7200000,
     id: "mrkxmrybcnbrb",
@@ -345,11 +351,12 @@ export default {
       timezone: "US/Central"
     },
     link: "https://www.meetup.com/ReactJSDallas/events/mrkxmrybcnbrb/",
-    description: `<p>Everyone has seen React in action. If you have used Facebook, Instagram, Airbnb, Dropbox, or IMDb, then you have used React.</p> <p>Our team at Call-Em-All created the popular open-source library Material-UI (<a href="http://www.material-ui.com" class="linkified">http://www.material-ui.com</a>), and we use React every day.</p> <p>Bring your laptop with your favorite text editor, dig into the React docs (<a href="http://facebook.github.io/react/" class="linkified">http://facebook.github.io/react/</a>) to get started learning, and come ready with questions that we can tackle together.</p> <p>Pizza/drinks at 6:15pm and feel free to stay later for more conversations!</p> <p>---------<br/>Join our Slack channel to tell us about your open jobs, upcoming events, fun blog posts, and code issues that Stack Overflow cannot solve!</p> <p><a href="https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY" class="linkified">https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY</a><br/>--------<br/>If you want to support our fun and informative events, then you can now make a contribution to our ReactJS Dallas User Group open collective!</p> <p><a href="https://opencollective.com/reactjs-dallas" class="linkified">https://opencollective.com/reactjs-dallas</a></p> ",
-    "visibility": "public`,
+    description:
+      '<p>Everyone has seen React in action. If you have used Facebook, Instagram, Airbnb, Dropbox, or IMDb, then you have used React.</p> <p>Our team at Call-Em-All created the popular open-source library Material-UI (<a href="http://www.material-ui.com" class="linkified">http://www.material-ui.com</a>), and we use React every day.</p> <p>Bring your laptop with your favorite text editor, dig into the React docs (<a href="http://facebook.github.io/react/" class="linkified">http://facebook.github.io/react/</a>) to get started learning, and come ready with questions that we can tackle together.</p> <p>Pizza/drinks at 6:15pm and feel free to stay later for more conversations!</p> <p>---------<br/>Join our Slack channel to tell us about your open jobs, upcoming events, fun blog posts, and code issues that Stack Overflow cannot solve!</p> <p><a href="https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY" class="linkified">https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY</a><br/>--------<br/>If you want to support our fun and informative events, then you can now make a contribution to our ReactJS Dallas User Group open collective!</p> <p><a href="https://opencollective.com/reactjs-dallas" class="linkified">https://opencollective.com/reactjs-dallas</a></p> ',
+    visibility: "public",
     member_pay_fee: false
   },
-  "7": {
+  {
     created: 1579050782000,
     duration: 7200000,
     id: "mrkxmrybcpbnb",
@@ -395,11 +402,12 @@ export default {
       timezone: "US/Central"
     },
     link: "https://www.meetup.com/ReactJSDallas/events/mrkxmrybcpbnb/",
-    description: `<p>Everyone has seen React in action. If you have used Facebook, Instagram, Airbnb, Dropbox, or IMDb, then you have used React.</p> <p>Our team at Call-Em-All created the popular open-source library Material-UI (<a href="http://www.material-ui.com" class="linkified">http://www.material-ui.com</a>), and we use React every day.</p> <p>Bring your laptop with your favorite text editor, dig into the React docs (<a href="http://facebook.github.io/react/" class="linkified">http://facebook.github.io/react/</a>) to get started learning, and come ready with questions that we can tackle together.</p> <p>Pizza/drinks at 6:15pm and feel free to stay later for more conversations!</p> <p>---------<br/>Join our Slack channel to tell us about your open jobs, upcoming events, fun blog posts, and code issues that Stack Overflow cannot solve!</p> <p><a href="https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY" class="linkified">https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY</a><br/>--------<br/>If you want to support our fun and informative events, then you can now make a contribution to our ReactJS Dallas User Group open collective!</p> <p><a href="https://opencollective.com/reactjs-dallas" class="linkified">https://opencollective.com/reactjs-dallas</a></p> ",
-    "visibility": "public`,
+    description:
+      '<p>Everyone has seen React in action. If you have used Facebook, Instagram, Airbnb, Dropbox, or IMDb, then you have used React.</p> <p>Our team at Call-Em-All created the popular open-source library Material-UI (<a href="http://www.material-ui.com" class="linkified">http://www.material-ui.com</a>), and we use React every day.</p> <p>Bring your laptop with your favorite text editor, dig into the React docs (<a href="http://facebook.github.io/react/" class="linkified">http://facebook.github.io/react/</a>) to get started learning, and come ready with questions that we can tackle together.</p> <p>Pizza/drinks at 6:15pm and feel free to stay later for more conversations!</p> <p>---------<br/>Join our Slack channel to tell us about your open jobs, upcoming events, fun blog posts, and code issues that Stack Overflow cannot solve!</p> <p><a href="https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY" class="linkified">https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY</a><br/>--------<br/>If you want to support our fun and informative events, then you can now make a contribution to our ReactJS Dallas User Group open collective!</p> <p><a href="https://opencollective.com/reactjs-dallas" class="linkified">https://opencollective.com/reactjs-dallas</a></p> ',
+    visibility: "public",
     member_pay_fee: false
   },
-  "8": {
+  {
     created: 1579050782000,
     duration: 7200000,
     id: "mrkxmrybcqblb",
@@ -445,11 +453,12 @@ export default {
       timezone: "US/Central"
     },
     link: "https://www.meetup.com/ReactJSDallas/events/mrkxmrybcqblb/",
-    description: `<p>Everyone has seen React in action. If you have used Facebook, Instagram, Airbnb, Dropbox, or IMDb, then you have used React.</p> <p>Our team at Call-Em-All created the popular open-source library Material-UI (<a href="http://www.material-ui.com" class="linkified">http://www.material-ui.com</a>), and we use React every day.</p> <p>Bring your laptop with your favorite text editor, dig into the React docs (<a href="http://facebook.github.io/react/" class="linkified">http://facebook.github.io/react/</a>) to get started learning, and come ready with questions that we can tackle together.</p> <p>Pizza/drinks at 6:15pm and feel free to stay later for more conversations!</p> <p>---------<br/>Join our Slack channel to tell us about your open jobs, upcoming events, fun blog posts, and code issues that Stack Overflow cannot solve!</p> <p><a href="https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY" class="linkified">https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY</a><br/>--------<br/>If you want to support our fun and informative events, then you can now make a contribution to our ReactJS Dallas User Group open collective!</p> <p><a href="https://opencollective.com/reactjs-dallas" class="linkified">https://opencollective.com/reactjs-dallas</a></p> ",
-    "visibility": "public`,
+    description:
+      '<p>Everyone has seen React in action. If you have used Facebook, Instagram, Airbnb, Dropbox, or IMDb, then you have used React.</p> <p>Our team at Call-Em-All created the popular open-source library Material-UI (<a href="http://www.material-ui.com" class="linkified">http://www.material-ui.com</a>), and we use React every day.</p> <p>Bring your laptop with your favorite text editor, dig into the React docs (<a href="http://facebook.github.io/react/" class="linkified">http://facebook.github.io/react/</a>) to get started learning, and come ready with questions that we can tackle together.</p> <p>Pizza/drinks at 6:15pm and feel free to stay later for more conversations!</p> <p>---------<br/>Join our Slack channel to tell us about your open jobs, upcoming events, fun blog posts, and code issues that Stack Overflow cannot solve!</p> <p><a href="https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY" class="linkified">https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY</a><br/>--------<br/>If you want to support our fun and informative events, then you can now make a contribution to our ReactJS Dallas User Group open collective!</p> <p><a href="https://opencollective.com/reactjs-dallas" class="linkified">https://opencollective.com/reactjs-dallas</a></p> ',
+    visibility: "public",
     member_pay_fee: false
   },
-  "9": {
+  {
     created: 1579050782000,
     duration: 7200000,
     id: "mrkxmrycccbqb",
@@ -495,11 +504,12 @@ export default {
       timezone: "US/Central"
     },
     link: "https://www.meetup.com/ReactJSDallas/events/mrkxmrycccbqb/",
-    description: `<p>Everyone has seen React in action. If you have used Facebook, Instagram, Airbnb, Dropbox, or IMDb, then you have used React.</p> <p>Our team at Call-Em-All created the popular open-source library Material-UI (<a href="http://www.material-ui.com" class="linkified">http://www.material-ui.com</a>), and we use React every day.</p> <p>Bring your laptop with your favorite text editor, dig into the React docs (<a href="http://facebook.github.io/react/" class="linkified">http://facebook.github.io/react/</a>) to get started learning, and come ready with questions that we can tackle together.</p> <p>Pizza/drinks at 6:15pm and feel free to stay later for more conversations!</p> <p>---------<br/>Join our Slack channel to tell us about your open jobs, upcoming events, fun blog posts, and code issues that Stack Overflow cannot solve!</p> <p><a href="https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY" class="linkified">https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY</a><br/>--------<br/>If you want to support our fun and informative events, then you can now make a contribution to our ReactJS Dallas User Group open collective!</p> <p><a href="https://opencollective.com/reactjs-dallas" class="linkified">https://opencollective.com/reactjs-dallas</a></p> ",
-    "visibility": "public`,
+    description:
+      '<p>Everyone has seen React in action. If you have used Facebook, Instagram, Airbnb, Dropbox, or IMDb, then you have used React.</p> <p>Our team at Call-Em-All created the popular open-source library Material-UI (<a href="http://www.material-ui.com" class="linkified">http://www.material-ui.com</a>), and we use React every day.</p> <p>Bring your laptop with your favorite text editor, dig into the React docs (<a href="http://facebook.github.io/react/" class="linkified">http://facebook.github.io/react/</a>) to get started learning, and come ready with questions that we can tackle together.</p> <p>Pizza/drinks at 6:15pm and feel free to stay later for more conversations!</p> <p>---------<br/>Join our Slack channel to tell us about your open jobs, upcoming events, fun blog posts, and code issues that Stack Overflow cannot solve!</p> <p><a href="https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY" class="linkified">https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY</a><br/>--------<br/>If you want to support our fun and informative events, then you can now make a contribution to our ReactJS Dallas User Group open collective!</p> <p><a href="https://opencollective.com/reactjs-dallas" class="linkified">https://opencollective.com/reactjs-dallas</a></p> ',
+    visibility: "public",
     member_pay_fee: false
   },
-  "10": {
+  {
     created: 1579050782000,
     duration: 7200000,
     id: "mrkxmryccdbmb",
@@ -545,11 +555,12 @@ export default {
       timezone: "US/Central"
     },
     link: "https://www.meetup.com/ReactJSDallas/events/mrkxmryccdbmb/",
-    description: `<p>Everyone has seen React in action. If you have used Facebook, Instagram, Airbnb, Dropbox, or IMDb, then you have used React.</p> <p>Our team at Call-Em-All created the popular open-source library Material-UI (<a href="http://www.material-ui.com" class="linkified">http://www.material-ui.com</a>), and we use React every day.</p> <p>Bring your laptop with your favorite text editor, dig into the React docs (<a href="http://facebook.github.io/react/" class="linkified">http://facebook.github.io/react/</a>) to get started learning, and come ready with questions that we can tackle together.</p> <p>Pizza/drinks at 6:15pm and feel free to stay later for more conversations!</p> <p>---------<br/>Join our Slack channel to tell us about your open jobs, upcoming events, fun blog posts, and code issues that Stack Overflow cannot solve!</p> <p><a href="https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY" class="linkified">https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY</a><br/>--------<br/>If you want to support our fun and informative events, then you can now make a contribution to our ReactJS Dallas User Group open collective!</p> <p><a href="https://opencollective.com/reactjs-dallas" class="linkified">https://opencollective.com/reactjs-dallas</a></p> ",
-    "visibility": "public`,
+    description:
+      '<p>Everyone has seen React in action. If you have used Facebook, Instagram, Airbnb, Dropbox, or IMDb, then you have used React.</p> <p>Our team at Call-Em-All created the popular open-source library Material-UI (<a href="http://www.material-ui.com" class="linkified">http://www.material-ui.com</a>), and we use React every day.</p> <p>Bring your laptop with your favorite text editor, dig into the React docs (<a href="http://facebook.github.io/react/" class="linkified">http://facebook.github.io/react/</a>) to get started learning, and come ready with questions that we can tackle together.</p> <p>Pizza/drinks at 6:15pm and feel free to stay later for more conversations!</p> <p>---------<br/>Join our Slack channel to tell us about your open jobs, upcoming events, fun blog posts, and code issues that Stack Overflow cannot solve!</p> <p><a href="https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY" class="linkified">https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY</a><br/>--------<br/>If you want to support our fun and informative events, then you can now make a contribution to our ReactJS Dallas User Group open collective!</p> <p><a href="https://opencollective.com/reactjs-dallas" class="linkified">https://opencollective.com/reactjs-dallas</a></p> ',
+    visibility: "public",
     member_pay_fee: false
   },
-  "11": {
+  {
     created: 1579050782000,
     duration: 7200000,
     id: "mrkxmryccfbmb",
@@ -595,8 +606,9 @@ export default {
       timezone: "US/Central"
     },
     link: "https://www.meetup.com/ReactJSDallas/events/mrkxmryccfbmb/",
-    description: `<p>Everyone has seen React in action. If you have used Facebook, Instagram, Airbnb, Dropbox, or IMDb, then you have used React.</p> <p>Our team at Call-Em-All created the popular open-source library Material-UI (<a href="http://www.material-ui.com" class="linkified">http://www.material-ui.com</a>), and we use React every day.</p> <p>Bring your laptop with your favorite text editor, dig into the React docs (<a href="http://facebook.github.io/react/" class="linkified">http://facebook.github.io/react/</a>) to get started learning, and come ready with questions that we can tackle together.</p> <p>Pizza/drinks at 6:15pm and feel free to stay later for more conversations!</p> <p>---------<br/>Join our Slack channel to tell us about your open jobs, upcoming events, fun blog posts, and code issues that Stack Overflow cannot solve!</p> <p><a href="https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY" class="linkified">https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY</a><br/>--------<br/>If you want to support our fun and informative events, then you can now make a contribution to our ReactJS Dallas User Group open collective!</p> <p><a href="https://opencollective.com/reactjs-dallas" class="linkified">https://opencollective.com/reactjs-dallas</a></p> ",
-    "visibility": "public`,
+    description:
+      '<p>Everyone has seen React in action. If you have used Facebook, Instagram, Airbnb, Dropbox, or IMDb, then you have used React.</p> <p>Our team at Call-Em-All created the popular open-source library Material-UI (<a href="http://www.material-ui.com" class="linkified">http://www.material-ui.com</a>), and we use React every day.</p> <p>Bring your laptop with your favorite text editor, dig into the React docs (<a href="http://facebook.github.io/react/" class="linkified">http://facebook.github.io/react/</a>) to get started learning, and come ready with questions that we can tackle together.</p> <p>Pizza/drinks at 6:15pm and feel free to stay later for more conversations!</p> <p>---------<br/>Join our Slack channel to tell us about your open jobs, upcoming events, fun blog posts, and code issues that Stack Overflow cannot solve!</p> <p><a href="https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY" class="linkified">https://join.slack.com/t/reactjs-dallas/shared_invite/enQtMzQ0NDY2NDQ3MzQ3LTc3YWI2Y2M4MDJiNjQyYjczYTE5YzM5OTBiMGM1YWNiMmE5YmE1ZjM2N2UxODMyNTE1NTAzNzlhMzliNTUyMGY</a><br/>--------<br/>If you want to support our fun and informative events, then you can now make a contribution to our ReactJS Dallas User Group open collective!</p> <p><a href="https://opencollective.com/reactjs-dallas" class="linkified">https://opencollective.com/reactjs-dallas</a></p> ',
+    visibility: "public",
     member_pay_fee: false
   }
-};
+];

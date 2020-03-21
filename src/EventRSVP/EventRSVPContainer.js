@@ -2,7 +2,6 @@ import React from "react";
 import ParticipantCard from "../ParticipantCard/ParticipantCard";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid } from "@material-ui/core";
-
 const useStyles = makeStyles(theme => ({
   participantText: {
     fontSize: "1.5rem",
@@ -42,7 +41,7 @@ export default function EventRSVP({ host, RSVPs }) {
           <ParticipantCard participant={host} />
         </Grid>
 
-        {RSVPs.filter(rsvp => rsvp.member.event_context.host === false).map(
+        {RSVPs.slice(0,10).filter(rsvp => rsvp.member.event_context.host === false).map(
           (participant, index) => (
             <Grid item key={`${participant.id}~${index}`} >
               <ParticipantCard participant={participant} />

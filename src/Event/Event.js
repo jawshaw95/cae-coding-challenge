@@ -4,6 +4,7 @@ import EventDetails from "../EventDetails/EventDetails";
 import EventRSVPContainer from "../EventRSVP/EventRSVPContainer";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid, Paper } from "@material-ui/core";
+import { formatDateTime } from "../util/dateUtil";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -27,25 +28,18 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-function formatDatetime(date) {
-  return date.toLocaleDateString("en-US", {
-    weekday: "long",
-    year: "numeric",
-    month: "long",
-    day: "numeric"
-  });
-}
-
 export default function Event({ event, host, RSVPs }) {
   const classes = useStyles();
   const { local_time, local_date, name, description, venue, group } = event;
   const { address_1, address_2, city, state, zip } = venue;
 
   //Formatted Address
-  const address = `${address_1} ${address_2}, ${city}, ${state.toUpperCase()} ${zip}`;
+  const address = `${address_1}${
+    address_2 ? ` ${address_2}` : ""
+  }, ${city}, ${state.toUpperCase()} ${zip}`;
 
   //Formatted Date
-  const eventDate = formatDatetime(new Date(`${local_time} ${local_date}`));
+  const eventDate = formatDateTime(local_time, local_date);
 
   return (
     <div className={classes.root}>
