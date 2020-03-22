@@ -12,7 +12,8 @@ import { formatDateTime } from "../util/dateUtil";
 const useStyles = makeStyles(theme => ({
   card: {
     height: "100px",
-    width: "350px"
+    width: "350px",
+    textAlign: 'center'
   },
   cardButton: {
     textDecoration: "none",
