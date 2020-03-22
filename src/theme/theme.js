@@ -40,6 +40,7 @@ export default createMuiTheme({
   },
   link: {
     textDecoration: "none",
-    textTransform: "none"
-  }
+    textTransform: "none",
+  },
+  spacing: factor => `${0.25 * factor}rem`
 });
