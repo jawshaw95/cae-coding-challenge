@@ -73,7 +73,11 @@ export default function Event({ event, host, RSVPs }) {
         <Grid item>
           <Paper className={classes.eventRSVPs}>
             {RSVPs.length > 0 && (
-              <EventParticipantsContainer host={host} RSVPs={RSVPs} eventId={id} />
+              <EventParticipantsContainer
+                host={host}
+                RSVPs={RSVPs}
+                eventId={id}
+              />
             )}
           </Paper>
         </Grid>
