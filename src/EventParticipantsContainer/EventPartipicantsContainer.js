@@ -1,12 +1,17 @@
 import React from "react";
 import ParticipantCard from "../ParticipantCard/ParticipantCard";
 import { makeStyles } from "@material-ui/core/styles";
-import { Grid } from "@material-ui/core";
+import { Grid, Button, Typography } from "@material-ui/core";
+import {Link} from 'react-router-dom';
+
 const useStyles = makeStyles(theme => ({
   participantText: {
     fontSize: "1.5rem",
     fontWeight: "bold"
-  }
+  },
+  link: {
+    ...theme.link,
+  },
 }));
 
 function participantReducer(participantCount, rsvp) {
@@ -19,20 +24,20 @@ function getParticipants(rsvps) {
     .reduce(participantReducer, 0);
 }
 
-export default function EventRSVP({ host, RSVPs }) {
+export default function EventRSVP({ host, RSVPs, eventId }) {
   const classes = useStyles();
   return RSVPs ? (
     <>
-      <Grid container justify="space-between" direction="row">
+      <Grid container justify="space-between" spacing={2} direction="row">
         <Grid item>
-          <h2 className={classes.hostedText}>
+          <Typography variant="h2" className={classes.hostedText}>
             Participants <span>{`(${getParticipants(RSVPs)})`}</span>
-          </h2>
+          </Typography>
         </Grid>
         <Grid item>
-          <h2 className={classes.hostedText}>
+          <Button size="large" component={Link} to={`${eventId}/rsvps`}variant="h2" className={classes.link}>
             See All
-          </h2>
+          </Button>
         </Grid>
       </Grid>
 

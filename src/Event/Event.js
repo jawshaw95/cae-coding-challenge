@@ -1,7 +1,7 @@
 import React from "react";
 import EventHeader from "../EventHeader/EventHeader";
 import EventDetails from "../EventDetails/EventDetails";
-import EventRSVPContainer from "../EventRSVP/EventRSVPContainer";
+import EventParticipantsContainer from "../EventParticipantsContainer/EventPartipicantsContainer";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid, Paper } from "@material-ui/core";
 import { formatDateTime } from "../util/dateUtil";
@@ -30,7 +30,7 @@ const useStyles = makeStyles(theme => ({
 
 export default function Event({ event, host, RSVPs }) {
   const classes = useStyles();
-  const { local_time, local_date, name, description, venue, group } = event;
+  const { local_time, local_date, name, description, venue, group, id } = event;
   const { address_1, address_2, city, state, zip } = venue;
 
   //Formatted Address
@@ -73,7 +73,7 @@ export default function Event({ event, host, RSVPs }) {
         <Grid item>
           <Paper className={classes.eventRSVPs}>
             {RSVPs.length > 0 && (
-              <EventRSVPContainer host={host} RSVPs={RSVPs} />
+              <EventParticipantsContainer host={host} RSVPs={RSVPs} eventId={id} />
             )}
           </Paper>
         </Grid>
