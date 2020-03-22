@@ -2,7 +2,7 @@ import React from "react";
 import ParticipantCard from "../ParticipantCard/ParticipantCard";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid, Button, Typography } from "@material-ui/core";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles(theme => ({
   participantText: {
@@ -10,8 +10,8 @@ const useStyles = makeStyles(theme => ({
     fontWeight: "bold"
   },
   link: {
-    ...theme.link,
-  },
+    ...theme.link
+  }
 }));
 
 function participantReducer(participantCount, rsvp) {
@@ -35,24 +35,28 @@ export default function EventRSVP({ host, RSVPs, eventId }) {
           </Typography>
         </Grid>
         <Grid item>
-          <Button size="large" component={Link} to={`${eventId}/rsvps`}variant="h2" className={classes.link}>
+          <Button
+            size="large"
+            component={Link}
+            to={`${eventId}/rsvps`}
+            className={classes.link}
+          >
             See All
           </Button>
         </Grid>
       </Grid>
 
-      <Grid direction="row" container spacing={2}>
+      <Grid justify="space-between" container spacing={4}>
         <Grid item>
           <ParticipantCard participant={host} />
         </Grid>
-
-        {RSVPs.slice(0,10).filter(rsvp => rsvp.member.event_context.host === false).map(
-          (participant, index) => (
-            <Grid item key={`${participant.id}~${index}`} >
+        {RSVPs.slice(0, 10)
+          .filter(rsvp => rsvp.member.event_context.host === false)
+          .map((participant, index) => (
+            <Grid item key={`${participant.id}~${index}`}>
               <ParticipantCard participant={participant} />
             </Grid>
-          )
-        )}
+          ))}
       </Grid>
     </>
   ) : (
