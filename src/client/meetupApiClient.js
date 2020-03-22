@@ -8,29 +8,35 @@ import eventsResponse from "../mock_data/eventsResponse";
 const base = "https://cors-anywhere.herokuapp.com/https://api.meetup.com";
 
 export const fetchEvents = group => {
-  if(process.env.NODE_ENV === 'development') {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => resolve({ data: eventsResponse }), 1);
-    });
+  console.log(process.env.NODE_ENV);
+  if (process.env.NODE_ENV === "production") {
+    return axios.get(`${base}/${group}/events`);
   }
-  return axios.get(`${base}/${group}/events`);
+  return new Promise((resolve, reject) => {
+    setTimeout(() => resolve({ data: eventsResponse }), 1);
+  });
 };
 
 export const fetchEvent = (group, eventId) => {
-  if (process.env.NODE_ENV === "development") {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => resolve({ data: eventsResponse.filter(event => event.id ===
-        eventId)[0] }), 1);
-    });
+  if (process.env.NODE_ENV === "production") {
+    return axios.get(`${base}/${group}/events/${eventId}`);
   }
-  return axios.get(`${base}/${group}/events/${eventId}`);
+  return new Promise((resolve, reject) => {
+    setTimeout(
+      () =>
+        resolve({
+          data: eventsResponse.filter(event => event.id === eventId)[0]
+        }),
+      1
+    );
+  });
 };
 
 export const fetchEventRSVPS = (group, eventId) => {
-  if (process.env.NODE_ENV === "development") {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => resolve({ data: eventRSVP }), 1);
-    });
+  if (process.env.NODE_ENV === "production") {
+    return axios.get(`${base}/${group}/events/${eventId}/rsvps`);
   }
-  return axios.get(`${base}/${group}/events/${eventId}/rsvps`);
+  return new Promise((resolve, reject) => {
+    setTimeout(() => resolve({ data: eventRSVP }), 1);
+  });
 };
