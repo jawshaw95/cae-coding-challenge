@@ -7,7 +7,7 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles(theme => ({
   cardContainer: {
     textDecoration: "none",
-    paddingTop: '.5em'
+    paddingTop: ".5em"
   }
 }));
 
@@ -26,8 +26,13 @@ export default function EventCardContainer() {
   }, []);
 
   return (
-    <Container>
-      <Grid justify='center' className={classes.cardContainer} container spacing={2}>
+    <Container maxWidth="sm">
+      <Grid
+        justify="center"
+        className={classes.cardContainer}
+        container
+        spacing={2}
+      >
         {events ? (
           events.map((event, index) => (
             <Grid item key={`${event.id}~${index}`}>

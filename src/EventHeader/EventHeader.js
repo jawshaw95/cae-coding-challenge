@@ -7,11 +7,11 @@ const useStyles = makeStyles(theme => ({
     textAlign: "center"
   },
   eventNameText: {
-    marginBottom: ".3em",
+    marginBottom: ".3em"
   },
   eventDateText: {
     fontFamily: "arial",
-    marginTop: ".3em",
+    marginTop: ".3em"
   },
   hostName: {
     color: "black",

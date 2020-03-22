@@ -1,6 +1,17 @@
 import { createMuiTheme } from "@material-ui/core/styles";
 
 export default createMuiTheme({
+  palette: {
+    common: {
+      honeydew: "#F3FCF0"
+    },
+    primary: {
+      main: "#2B303A"
+    },
+    secondary: {
+      main: "#BFCBC2"
+    }
+  },
   typography: {
     h1: {
       fontSize: "3rem",
@@ -40,7 +51,7 @@ export default createMuiTheme({
   },
   link: {
     textDecoration: "none",
-    textTransform: "none",
+    textTransform: "none"
   },
   spacing: factor => `${0.25 * factor}rem`
 });

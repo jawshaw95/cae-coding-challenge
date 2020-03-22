@@ -14,23 +14,23 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(2),
     textAlign: "left",
     borderRadius: 0,
-    backgroundColor: "#E9EBF8"
+    backgroundColor: theme.palette.secondary.main
   },
   eventDescription: {
     padding: theme.spacing(2),
-    borderRadius: 0,
-    backgroundColor: "#FDFEFF"
+    borderRadius: 0
   },
   eventRSVPs: {
     padding: theme.spacing(2),
     borderRadius: 0,
-    backgroundColor: "#FFFAED"
+    backgroundColor: "#F3FCF0"
   }
 }));
 
+//Main Grid for event
 export default function Event({ event, host, RSVPs }) {
   const classes = useStyles();
-  const { local_time, local_date, name, description, venue, group, id } = event;
+  const { local_time, local_date, name, description, venue, group, id, yes_rsvp_count } = event;
   const { address_1, address_2, city, state, zip } = venue;
 
   //Formatted Address
@@ -40,7 +40,6 @@ export default function Event({ event, host, RSVPs }) {
 
   //Formatted Date
   const eventDate = formatDateTime(local_time, local_date);
-
   return (
     <div className={classes.root}>
       <Grid
@@ -77,6 +76,7 @@ export default function Event({ event, host, RSVPs }) {
                 host={host}
                 RSVPs={RSVPs}
                 eventId={id}
+                yesCount={yes_rsvp_count}
               />
             )}
           </Paper>

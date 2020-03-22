@@ -16,7 +16,7 @@ import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 
 const styles = {
   paper: {
-    background: "#E6E6E6",
+    background: "#F3FCF0",
     width: "100%"
   },
   tabs: {

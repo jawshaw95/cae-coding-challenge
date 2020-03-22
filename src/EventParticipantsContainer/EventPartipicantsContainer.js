@@ -14,24 +14,15 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-function participantReducer(participantCount, rsvp) {
-  return participantCount + 1 + rsvp.guests;
-}
-
-function getParticipants(rsvps) {
-  return rsvps
-    .filter(rsvp => rsvp.response === "yes")
-    .reduce(participantReducer, 0);
-}
-
-export default function EventRSVP({ host, RSVPs, eventId }) {
+//Grid to contain event participant cards
+export default function EventParticipationContainer({ host, RSVPs, eventId, yesCount }) {
   const classes = useStyles();
   return RSVPs ? (
     <>
       <Grid container justify="space-between" spacing={2} direction="row">
         <Grid item>
           <Typography variant="h2" className={classes.hostedText}>
-            Participants <span>{`(${getParticipants(RSVPs)})`}</span>
+            Participants <span>{`(${yesCount})`}</span>
           </Typography>
         </Grid>
         <Grid item>
@@ -46,7 +37,7 @@ export default function EventRSVP({ host, RSVPs, eventId }) {
         </Grid>
       </Grid>
 
-      <Grid justify="space-between" container spacing={4}>
+      <Grid justify="flex-start" container spacing={4}>
         <Grid item>
           <ParticipantCard participant={host} />
         </Grid>

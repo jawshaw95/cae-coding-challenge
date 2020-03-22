@@ -7,17 +7,11 @@ const useStyles = makeStyles(theme => ({
     display: "flex",
     height: "100px",
     width: "100%",
-    background: "#E6E6E6"
-    // minHeight: 50,
-    // textAlign: "center"
+    background: theme.palette.common.honeydew
   },
   media: {
-    // marginLeft: "auto",
-    // marginRight: "auto",
     height: 100,
     width: 100
-    // borderRadius: "50%",
-    // marginTop: "10px"
   }
 }));
 

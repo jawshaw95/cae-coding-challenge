@@ -8,7 +8,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function Map({ latitude, longitude, zoom, size }) {
+export default function Map({ latitude, longitude, size }) {
   const classes = useStyles();
   const imageUrl = `https://maps.googleapis.com/maps/api/staticmap?center=${latitude},${longitude}&markers=red:blue|${latitude},${longitude}&size=${size}&zoom=${14}&key=${
     process.env.REACT_APP_MAPS_API_KEY

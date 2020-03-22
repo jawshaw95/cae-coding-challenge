@@ -23,10 +23,16 @@ export default function Header() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="static" color="primary" className={classes.appBar}>
         <Toolbar className={classes.toolBar} variant="dense">
-          <Typography className={classes.link} component={Link} to="/" variant="h3" color="inherit">
-            ReactJS Event Viewer
+          <Typography
+            className={classes.link}
+            component={Link}
+            to="/"
+            variant="h4"
+            color="inherit"
+          >
+            View All Events
           </Typography>
         </Toolbar>
       </AppBar>

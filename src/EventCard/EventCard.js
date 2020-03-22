@@ -13,7 +13,7 @@ const useStyles = makeStyles(theme => ({
   card: {
     height: "100px",
     width: "350px",
-    textAlign: 'center'
+    textAlign: "center"
   },
   cardButton: {
     textDecoration: "none",
@@ -27,6 +27,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
+//Clickable card to display high level event information
 export default function EventCard({ event }) {
   const classes = useStyles();
 
@@ -36,7 +37,6 @@ export default function EventCard({ event }) {
       <Card className={classes.card}>
         <CardActionArea component={Link} to={`/${event.id}`}>
           <CardContent className={classes.cardButton}>
-            {/* TODO put formatted time, probably have to refactor logic */}
             <Typography variant="h6">
               {formatDateTime(local_time, local_date)}
             </Typography>

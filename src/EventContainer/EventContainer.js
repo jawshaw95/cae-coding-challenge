@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import Event from '../Event/Event';
+import Event from "../Event/Event";
 import { fetchEvent, fetchEventRSVPS } from "../client/meetupApiClient";
 
+//Controls data fetching for event
 class EventContainer extends Component {
   constructor(props) {
     super(props);
@@ -19,9 +20,8 @@ class EventContainer extends Component {
       const response = await fetchEvent("reactjs-dallas", id);
       const eventData = await response.data;
       this.setState({ event: eventData });
-      
-    } catch(e) {
-      this.setState({error: true});
+    } catch (e) {
+      this.setState({ error: true });
     }
   }
 
@@ -30,38 +30,35 @@ class EventContainer extends Component {
       const response = await fetchEventRSVPS("reactjs-dallas", id);
       const RSVPList = await response.data;
       this.setState({ RSVPs: RSVPList });
+
+      //Extracting host so they can be first card
       this.setState({
         host: RSVPList.filter(
           rsvp => rsvp.member.event_context.host === true
         )[0]
       });
     } catch (e) {
-      this.setState({error: true});
+      this.setState({ error: true });
     }
   }
 
   componentDidMount = () => {
-    console.log("EventContainer mounted");
+    //Fetch data needed for event
     this.fetchEventData(this.props.match.params.id);
     this.fetchEventRSVPData(this.props.match.params.id);
   };
 
-  componentDidUpdate = () => {
-    console.log("EventContainer did update");
-  };
-
-  componentWillUnmount = () => {
-    console.log("EventContainer will unmount");
-  };
-
   render() {
-    const {event, host, RSVPs} = this.state;
+    const { event, host, RSVPs } = this.state;
     if (this.state.hasError) {
       return <h1>Something went wrong.</h1>;
     }
-    return event && host && RSVPs ? <Event event={event} host={host} RSVPs={RSVPs} /> : <div>Loading...</div>
+    return event && host && RSVPs ? (
+      <Event event={event} host={host} RSVPs={RSVPs} />
+    ) : (
+      <div>Loading...</div>
+    );
   }
 }
-
 
 export default EventContainer;
