@@ -18,7 +18,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function DenseAppBar() {
+export default function Header() {
   const classes = useStyles();
 
   return (
