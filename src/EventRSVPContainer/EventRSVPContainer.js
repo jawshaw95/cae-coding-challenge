@@ -10,7 +10,7 @@ import {
   Button,
   Typography
 } from "@material-ui/core";
-import { withStyles} from "@material-ui/core/styles";
+import { withStyles } from "@material-ui/core/styles";
 import { Link } from "react-router-dom";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 
@@ -56,7 +56,7 @@ class EventRSVPContainer extends Component {
       const RSVPList = await response.data;
       this.setState({ RSVPs: RSVPList });
     } catch (e) {
-      this.setState({ error: true });
+      this.setState({ hasError: true });
     }
   }
 
@@ -71,11 +71,9 @@ class EventRSVPContainer extends Component {
   render() {
     const { classes } = this.props;
     const { RSVPs, activeTab } = this.state;
+    
     if (this.state.hasError) {
       return <h1>Something went wrong.</h1>;
-    }
-
-    if (activeTab === 0) {
     }
 
     return (

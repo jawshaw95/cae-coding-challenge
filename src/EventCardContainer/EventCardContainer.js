@@ -14,17 +14,25 @@ const useStyles = makeStyles(theme => ({
 export default function EventCardContainer() {
   const classes = useStyles();
   const [events, setEvents] = useState();
+  const [error, setError] = useState();
 
   async function fetchEventsData() {
-    const response = await fetchEvents("reactjs-dallas");
-    const eventData = await response.data;
-    setEvents(eventData);
+    try {
+      const response = await fetchEvents("reactjs-dallas");
+      const eventData = await response.data;
+      setEvents(eventData);
+    } catch (e) {
+      setError(e);
+    }
   }
 
   useEffect(() => {
     fetchEventsData();
   }, []);
 
+  if (error) {
+    return <div>An error ocurred loading events</div>;
+  }
   return (
     <Container maxWidth="sm">
       <Grid

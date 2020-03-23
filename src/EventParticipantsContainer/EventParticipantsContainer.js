@@ -17,7 +17,7 @@ const useStyles = makeStyles(theme => ({
 //Grid to contain event participant cards
 export default function EventParticipationContainer({ host, RSVPs, eventId, yesCount }) {
   const classes = useStyles();
-  return RSVPs ? (
+  return (
     <>
       <Grid container justify="space-between" spacing={2} direction="row">
         <Grid item>
@@ -50,7 +50,5 @@ export default function EventParticipationContainer({ host, RSVPs, eventId, yesC
           ))}
       </Grid>
     </>
-  ) : (
-    <div>Loading</div>
-  );
+  )
 }

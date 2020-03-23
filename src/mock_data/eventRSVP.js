@@ -130,7 +130,7 @@ export default [
   {
     created: 1583895732000,
     updated: 1583895732000,
-    response: "yes",
+    response: "no",
     guests: 0,
     event: {
       id: "mrkxmrybcgbsb",

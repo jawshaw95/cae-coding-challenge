@@ -21,7 +21,7 @@ class EventContainer extends Component {
       const eventData = await response.data;
       this.setState({ event: eventData });
     } catch (e) {
-      this.setState({ error: true });
+      this.setState({ hasError: true });
     }
   }
 
@@ -38,7 +38,7 @@ class EventContainer extends Component {
         )[0]
       });
     } catch (e) {
-      this.setState({ error: true });
+      this.setState({ hasError: true });
     }
   }
 
@@ -46,7 +46,6 @@ class EventContainer extends Component {
     //Fetch data needed for event
     this.fetchEventData(this.props.match.params.id);
     this.fetchEventRSVPData(this.props.match.params.id);
-    
   };
 
   render() {
