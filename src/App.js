@@ -3,7 +3,7 @@ import EventContainer from "./EventContainer/EventContainer";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import EventCardContainer from "./EventCardContainer/EventCardContainer";
 import EventRSVPContainer from './EventRSVPContainer/EventRSVPContainer'
-import AppBar from "./AppBar/AppBar";
+import AppBar from "./Header/Header";
 
 function App() {
   return (

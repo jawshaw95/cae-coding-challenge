@@ -46,6 +46,7 @@ class EventContainer extends Component {
     //Fetch data needed for event
     this.fetchEventData(this.props.match.params.id);
     this.fetchEventRSVPData(this.props.match.params.id);
+    
   };
 
   render() {

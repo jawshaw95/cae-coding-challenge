@@ -8,7 +8,6 @@ import eventsResponse from "../mock_data/eventsResponse";
 const base = "https://cors-anywhere.herokuapp.com/https://api.meetup.com";
 
 export const fetchEvents = group => {
-  console.log(process.env.NODE_ENV);
   if (process.env.NODE_ENV === "production") {
     return axios.get(`${base}/${group}/events`);
   }

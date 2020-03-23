@@ -33,7 +33,6 @@ export default function EventCard({ event }) {
 
   const { name, local_date, local_time, venue } = event;
   return (
-    <>
       <Card className={classes.card}>
         <CardActionArea component={Link} to={`/${event.id}`}>
           <CardContent className={classes.cardButton}>
@@ -47,6 +46,5 @@ export default function EventCard({ event }) {
           </CardContent>
         </CardActionArea>
       </Card>
-    </>
   );
 }

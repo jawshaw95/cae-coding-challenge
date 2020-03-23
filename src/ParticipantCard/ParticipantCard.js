@@ -8,10 +8,6 @@ const useStyles = makeStyles(theme => ({
     minHeight: 50,
     textAlign: "center"
   },
-  center: {
-    // marginLeft: "auto",
-    // marginRight: "auto"
-  },
   media: {
     marginLeft: "auto",
     marginRight: "auto",

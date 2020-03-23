@@ -1,7 +1,7 @@
 import React from "react";
 import EventHeader from "../EventHeader/EventHeader";
 import EventDetails from "../EventDetails/EventDetails";
-import EventParticipantsContainer from "../EventParticipantsContainer/EventPartipicantsContainer";
+import EventParticipantsContainer from "../EventParticipantsContainer/EventParticipantsContainer";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid, Paper } from "@material-ui/core";
 import { formatDateTime } from "../util/dateUtil";
@@ -71,14 +71,12 @@ export default function Event({ event, host, RSVPs }) {
         </Grid>
         <Grid item>
           <Paper className={classes.eventRSVPs}>
-            {RSVPs.length > 0 && (
               <EventParticipantsContainer
                 host={host}
                 RSVPs={RSVPs}
                 eventId={id}
                 yesCount={yes_rsvp_count}
               />
-            )}
           </Paper>
         </Grid>
       </Grid>

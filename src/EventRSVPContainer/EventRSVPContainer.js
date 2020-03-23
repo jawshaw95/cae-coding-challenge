@@ -10,7 +10,7 @@ import {
   Button,
   Typography
 } from "@material-ui/core";
-import { withStyles } from "@material-ui/core/styles";
+import { withStyles} from "@material-ui/core/styles";
 import { Link } from "react-router-dom";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 
@@ -23,7 +23,9 @@ const styles = {
     marginBottom: ".3em"
   },
   tab: {
-    width: "50%"
+    width: "50%",
+    textDecoration: "none",
+    textTransform: "none"
   },
   returnButtonIcon: {
     paddingRight: ".1em"
@@ -93,7 +95,6 @@ class EventRSVPContainer extends Component {
                 className={classes.tabs}
                 onChange={this.handleTabChange}
                 value={activeTab}
-                variant="text"
                 size="large"
               >
                 <Tab label="Going" className={classes.tab} />

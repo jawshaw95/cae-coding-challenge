@@ -40,7 +40,7 @@ export default function EventHeader({ eventDate, eventName, host }) {
           className={classes.hostGrid}
         >
           <Grid item>
-            <Avatar alt={host.name} src={host.member.photo.thumb_link} />
+            <Avatar alt={host.member.name} src={host.member.photo.thumb_link} />
           </Grid>
           <Grid item>
             <Grid container direction="column" className={classes.hostName}>
